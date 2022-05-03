@@ -12,7 +12,7 @@ export default function BOS() {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Первая картинка</h3>
+                        <h3>Первая картина</h3>
                         <p>Милые щеночки</p>
                     </Carousel.Caption>
                 </Carousel.Item>
