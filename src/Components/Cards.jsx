@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createRef } from 'react'
 import { Container, Card, Button } from 'react-bootstrap';
 
 export default function Cards() {
@@ -16,18 +16,21 @@ export default function Cards() {
 }
 class CardP extends React.Component {
     constructor(props) {
-        super(props);
-        this.state = {
-            img2:"https://i.pinimg.com/200x/a0/6d/5d/a06d5dca58ba22f6b4843c1e9e129476.jpg",
-            img3:"https://i.pinimg.com/originals/1a/59/56/1a5956f69e436bbf42c167121faece8e.jpg",
-            title2:"Parrots",
-            title3:"Hamster",
-            description2:"Flyyyyy",
-            description3:"Cute",
-            button:"View more"
+        super(props);    
+        this.state = {   
+            img2: "https://i.pinimg.com/200x/a0/6d/5d/a06d5dca58ba22f6b4843c1e9e129476.jpg",
+            img3: "https://i.pinimg.com/originals/1a/59/56/1a5956f69e436bbf42c167121faece8e.jpg",
+            title2: "Parrots",
+            title3: "Hamster",
+            description2: "Flyyyyy",
+            description3: "Cute",
+            button: "View more"
         };
     }
-
+    
+    youClick(){
+        alert('Clicked');
+    }
 
     render() {
         return (
@@ -37,7 +40,7 @@ class CardP extends React.Component {
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
                         <Card.Text>{this.props.description}</Card.Text>
-                        <Button variant="success">{this.props.button}</Button>
+                        <Button variant="success" onClick={this.youClick}>{this.props.button}</Button>
                     </Card.Body>
                 </Card>
 
@@ -46,7 +49,7 @@ class CardP extends React.Component {
                     <Card.Body>
                         <Card.Title>{this.props.title1}</Card.Title>
                         <Card.Text>{this.props.description1}</Card.Text>
-                        <Button variant="success">{this.props.button}</Button>
+                        <Button variant="success" onClick={this.youClick}>{this.props.button}</Button>
                     </Card.Body>
                 </Card>
 
@@ -55,7 +58,7 @@ class CardP extends React.Component {
                     <Card.Body>
                         <Card.Title>{this.state.title2}</Card.Title>
                         <Card.Text>{this.state.description2}</Card.Text>
-                        <Button variant="success">{this.state.button}</Button>
+                        <Button variant="success" onClick={this.youClick}>{this.state.button}</Button>
                     </Card.Body>
                 </Card>
 
@@ -64,7 +67,7 @@ class CardP extends React.Component {
                     <Card.Body>
                         <Card.Title>{this.state.title3}</Card.Title>
                         <Card.Text>{this.state.description3}</Card.Text>
-                        <Button variant="success">{this.state.button}</Button>
+                        <Button variant="success" onClick={this.youClick}>{this.state.button}</Button>
                     </Card.Body>
                 </Card>
             </Container>
