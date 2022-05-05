@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Card, Container, Button } from "react-bootstrap";
+import { Carousel} from "react-bootstrap";
 
 export default function BOS() {
     return (
@@ -12,7 +12,7 @@ export default function BOS() {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Первая картина</h3>
+                        <h3>Первая картинка</h3>
                         <p>Милые щеночки</p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -41,43 +41,6 @@ export default function BOS() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-
-    
-            <Container className="row" >
-                <Card className="m-4" bg="secondary" style={{ width: '19rem' }}>
-                    <Card.Img className="m-1" variant="top" src="https://www.inspection.gc.ca/DAM/DAM-animals-animaux/STAGING/images-images/dog_import_banner_twitter_1614708260378_eng.jpg" />
-                    <Card.Body>
-                        <Card.Title>Dogs</Card.Title>
-                        <Card.Text>
-                            Best Friend
-                        </Card.Text>
-                        <Button variant="success">View more</Button>
-                    </Card.Body>
-                </Card>
-
-                <Card className="m-4" bg="secondary" style={{ width: '19rem' }}>
-                    <Card.Img className="m-1" variant="top" src="https://i.pinimg.com/564x/e2/84/66/e2846690095ebff59ac1599bf5192288--raw-food-food-networktrisha.jpg" />
-                    <Card.Body>
-                        <Card.Title>Cats</Card.Title>
-                        <Card.Text>
-                            World King
-                        </Card.Text>
-                        <Button variant="success">View more</Button>
-                    </Card.Body>
-                </Card>
-
-                <Card className="m-4" bg="secondary" style={{ width: '19rem' }}>
-                    <Card.Img className="m-1" variant="top" src="https://i.pinimg.com/200x/a0/6d/5d/a06d5dca58ba22f6b4843c1e9e129476.jpg" />
-                    <Card.Body>
-                        <Card.Title>Parrots</Card.Title>
-                        <Card.Text>
-                            Flyyyy
-                        </Card.Text>
-                        <Button variant="success">View more</Button>
-                    </Card.Body>
-                </Card>
-            </Container>
-         
         </>
     );
 }
